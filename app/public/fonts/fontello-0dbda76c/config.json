@@ -1,0 +1,30 @@
+{
+  "name": "icon-fonts",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ef1e2440ec3158aa611dcf00324dc444",
+      "css": "gota",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M259.4 44.2C288.1 99.5 299.6 164.3 288 230.4 273.8 310.6 228.3 377.5 166.2 420.6 103.9 463.7 58.1 530.7 43.9 611.2 15.7 770.8 122.3 923.1 281.9 951.3 441.6 979.5 593.8 872.8 622 713.2 676.5 404.2 293.4 73 259.4 44.2Z",
+        "width": 667
+      },
+      "search": [
+        "gota-copy"
+      ]
+    },
+    {
+      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
+      "css": "spin",
+      "code": 59394,
+      "src": "fontelico"
+    }
+  ]
+}
