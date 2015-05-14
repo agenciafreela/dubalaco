@@ -1,0 +1,37 @@
+{
+  "name": "dubalaco",
+  "version": "1.0.0",
+  "description": "Site do Dubalaco",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agenciafreela/dubalaco.git"
+  },
+  "keywords": [
+    "balas",
+    "dubalaco"
+  ],
+  "author": "Leandro Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agenciafreela/dubalaco/issues"
+  },
+  "homepage": "https://github.com/agenciafreela/dubalaco",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cache": "^0.2.8",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4"
+  }
+}
