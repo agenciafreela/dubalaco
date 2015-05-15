@@ -10,12 +10,15 @@ var sass =        require('gulp-sass');
 var jshint =      require('gulp-jshint');
 var uglify =      require('gulp-uglify');
 
-
 gulp.task('default',['sass','javascript', 'watch', 'connectOnDev']);
 
 // Task para assistir mudanças em arquivos
 gulp.task('watch', function(){
-  gulp.watch('app/src/scss/**/*.scss',['sass']);
+  gulp.watch('app/*.html',function(){
+    gulp.src('app/*.html')
+    .pipe(connect.reload());
+  });
+  gulp.watch(['app/src/scss/**/*.scss'],['sass']);
   gulp.watch('app/src/scripts/**/*.js',['javascript']);
 });
 

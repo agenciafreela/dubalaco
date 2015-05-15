@@ -1,0 +1,35 @@
+@import 'partial/reset.scss';
+@import 'partial/variables.scss';
+@import 'partial/fonts.scss';
+
+html, body{
+  height: 100%;
+  min-height:100%;
+
+  a:link{ text-decoration: none; }
+  a:hover{text-decoration: none;}
+  a:visited{text-decoration: none;}
+  a:active{text-decoration: none;}
+}
+
+
+
+nav{
+  text-align: right;
+  padding: 10px;
+
+  ul{
+    li{
+      display: inline;
+      &:nth-child(1)>a{color: $casablanca;}
+      &:nth-child(2)>a{color: $keppel;}
+      &:nth-child(3)>a{color: $chelsea-cucumber;}
+      &:nth-child(4)>a{color: $victoria;}
+      &>a.active{color: $black;}
+    }
+  }
+}
+
+img, section, nav{
+  border: 1px #969 dotted;
+}
