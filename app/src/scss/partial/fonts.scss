@@ -9,6 +9,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url('../fonts/poetsenone/PoetsenOne-Regular.eot');
+  src: url('../fonts/poetsenone/PoetsenOne-Regular.eot#iefix') format('embedded-opentype'),
+  url('../fonts/poetsenone/PoetsenOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cafeta';
+  src: url('../fonts/cafeta/Cafeta.eot');
+  src: url('../fonts/cafeta/Cafeta.eot#iefix') format('embedded-opentype'),
+  url('../fonts/cafeta/Cafeta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .icon{
   font-family: "icon-fonts";
   font-style: normal;
