@@ -46,7 +46,7 @@ div[class*="balloon"]{
   position: absolute;
   text-align: center;
   padding: 0px;
-  min-height: 236px;
+
   align-items: center;
   justify-content: center;
 
@@ -73,18 +73,23 @@ div.victoria{
   &:before{
     background-position: 50% 0;
   }
+  color: $casablanca;
 }
 
 div.kepper{
   &:before{
     background-position: 50% $i;
   }
+
+  color: $casablanca;
 }
 
 div.casablanca{
   &:before{
     background-position: 50% $i * 2;
   }
+
+  color:$victoria;
 }
 
 div.flamingo{
@@ -104,26 +109,33 @@ div[class*="-flip"]{
   }
 }
 
-
-img, section, nav, div{
-  border: 1px aliceblue dotted;
-  -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
-}
 div{
   min-width: 222px;
-  min-height: 236px;
+  min-height: 235px;
 }
 
 /* Home */
 #dubalaco{
 
   font-family: 'Cafeta', helvetica;
-  font-size: 30pt;
+  font-weight: 100;
+  font-size: 28pt;
 
+  p{
+    vertical-align: middle;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  strong{
+    font-size: 46pt;
+    display: block;
+  }
 
   position: relative;
+
   .pull-down{
     bottom: 0;
   }
