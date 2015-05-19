@@ -43,6 +43,9 @@ nav{
 
 div[class*="balloon"]{
   @include flexbox;
+  min-width: 222px;
+  min-height: 235px;
+
   position: absolute;
   text-align: center;
   padding: 0px;
@@ -107,11 +110,6 @@ div[class*="-flip"]{
   &:before{
     @include flipVertical();
   }
-}
-
-div{
-  min-width: 222px;
-  min-height: 235px;
 }
 
 /* Home */
