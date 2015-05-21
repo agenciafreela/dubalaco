@@ -10,22 +10,30 @@
 }
 
 @font-face {
-  font-family: 'PoetsenOne';
+  font-family: 'PoetsenOne Regular';
   src: url('../fonts/poetsenone/PoetsenOne-Regular.eot');
   src: url('../fonts/poetsenone/PoetsenOne-Regular.eot#iefix') format('embedded-opentype'),
   url('../fonts/poetsenone/PoetsenOne-Regular.ttf') format('truetype');
-  font-weight: 100;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cafeta';
+    font-family: 'Cafeta Regular';
+    src: url('../fonts/cafeta/cafetaRegular.eot');
+    src: url('../fonts/cafeta/cafetaRegular.eot#iefix') format('embedded-opentype'),
+    url('../fonts/cafeta/cafetaRegular.ttf') format('truetype');
+    font-weight: normal;
+
+}
+/* @font-face {
+  font-family: 'cafeta regular';
   src: url('../fonts/cafeta/Cafeta.eot');
   src: url('../fonts/cafeta/Cafeta.eot#iefix') format('embedded-opentype'),
   url('../fonts/cafeta/Cafeta.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 .icon{
   font-family: "icon-fonts";
