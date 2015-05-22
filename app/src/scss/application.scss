@@ -22,6 +22,8 @@
   }
 
   .wrapper{
+    position: relative;
+
     &:before{
       content: " ";
       position: absolute;
@@ -41,14 +43,24 @@
       }
     }
 
+    &.brandDubalaco{
+      height: 800px;
+
+      &::before{
+        background:url(../images/bg-dubalaco.gif) no-repeat top center ;
+      }
+    }
+
     &.produto{
+      height: 800px;
+
       &::before{
         background:url(../images/bg-produto.gif) no-repeat top center ;
       }
     }
 
-
     header{
+      padding-top:20px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -76,6 +88,7 @@
       justify-content: center;
     }
     section{
+      margin-top: 20px;
       max-width: 1000px;
       margin: auto;
     }
@@ -173,12 +186,16 @@
     }
   }
 
-  #produto{
+
+  #brandDubalaco > .main{
+    padding: 0 100px;
+  }
+
+  #brandDubalaco, #produto{
     font-size: 1.4em;
     color: white;
 
     .main{
-      padding: 0 100px;
       article{
         display: flex;
         flex: 1 100%;
@@ -203,5 +220,14 @@
         font-size: 1.3em;
         text-align: center;
       }
+    }
+  }
+
+  #produto{
+    .main{
+      padding-top: 20px;
+    }
+    #balloon-product{
+      margin-bottom: -90px;
     }
   }
