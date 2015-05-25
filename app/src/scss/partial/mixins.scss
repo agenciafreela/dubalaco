@@ -44,7 +44,7 @@
   justify-content: $content;
 }
 
-@mixin align-item($align) {
+@mixin align-items($align) {
   -webkit-align-items: $align;
   align-items: $align;
 }
@@ -54,4 +54,10 @@
   -ms-flex: $flex; /* IE 10 */
   -moz-flex: $flex; /* Mozilla 28.0 */
   flex: $flex;
+}
+
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
 }

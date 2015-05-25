@@ -91,9 +91,9 @@
     header{
       @include flexbox;
       @include flex-direction(row);
-      @include justify-content: (space-between);
+      @include justify-content(space-between);
       @include align-items(center);
-      @include flex('1 100%');
+      @include flex(1 100%);
 
       padding-top:20px;
 
@@ -114,9 +114,9 @@
     }
 
     .main{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
+      @include flexbox;
+      @include flex-flow(row wrap);
+      @include justify-content(center);
     }
     section{
       margin-top: 20px;
@@ -124,12 +124,13 @@
       margin: auto;
     }
   }
-
-  div[class*="balloon"]{
+div[class*="balloon"]{
     @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+
     position: relative;
-    align-items: center;
-    justify-content: center;
+
 
     &:before{
       content: " ";
@@ -198,6 +199,9 @@
     font-size: 1.6em;
 
     header{
+
+      @include justify-content(flex-end);
+
       justify-content: flex-end ;
       height: 100px;
     }
@@ -217,7 +221,6 @@
     }
   }
 
-
   #brandDubalaco > .main{
     padding: 0 100px;
   }
@@ -228,9 +231,9 @@
 
     .main{
       article{
-        display: flex;
-        flex: 1 100%;
-        justify-content: center;
+        @include flexbox;
+        @include flex;
+        @include justify-content(center);
       }
     }
 
@@ -257,6 +260,13 @@
   #produto{
     .main{
       padding-top: 20px;
+      article{
+        @include flexbox;
+        @include flex(1 100%);
+      }
+      img{
+        position: relative;
+      }
     }
     #balloon-product{
       margin-bottom: -90px;
@@ -278,6 +288,7 @@
       color: $cardinal-red;
     }
   }
+
   #contato{
     aside{
       padding-top: 100px;
