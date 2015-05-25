@@ -71,7 +71,7 @@
       }
     }
 
-    &.dubalaco-valores{
+    &.dubalaco-valores, &.dubalaco-organico{
       height: 700px;
 
       &::before{
@@ -234,7 +234,13 @@ div[class*="balloon"]{
     padding: 0 100px;
   }
 
-  #brandDubalaco, #produto, #onde-encontrar, #contato, #dubalaco-valores{
+  #brandDubalaco,
+  #produto,
+  #onde-encontrar,
+  #contato,
+  #dubalaco-valores,
+  #dubalaco-organico{
+
     font-size: 1.4em;
     color: white;
 
@@ -304,9 +310,17 @@ div[class*="balloon"]{
     }
   }
 
-  #dubalaco-valores{
+  .dubalaco-painel{
     font-family: 'cafeta', helvetica;
-    color: $victoria;
+    color: $victoria !important;
     font-size: 1.2em;
     text-align: left;
+    .main{
+      aside{
+        max-width: 25%;
+        h1{
+          @include flex(1 100%);
+        }
+      }
+    }
   }
