@@ -49,7 +49,7 @@
   align-items: $align;
 }
 
-@mixin flex($flex:1) {
+@mixin flex($flex: 1 100%) {
   -webkit-flex: $flex; /* Safari 6.1+ */
   -ms-flex: $flex; /* IE 10 */
   -moz-flex: $flex; /* Mozilla 28.0 */
