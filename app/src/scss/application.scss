@@ -40,8 +40,6 @@
     }
   }
 
-
-
   .wrapper{
     position: relative;
 
@@ -91,12 +89,14 @@
     }
 
     header{
+      @include flexbox;
+      @include flex-direction(row);
+      @include justify-content: (space-between);
+      @include align-items(center);
+      @include flex('1 100%');
+
       padding-top:20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex: 1 100%;
+
 
       nav{
         font-size: 14pt;
