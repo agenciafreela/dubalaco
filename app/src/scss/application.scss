@@ -323,6 +323,8 @@
 
   .dubalaco-organico{
     .main{
+      @include flex-flow(row nowrap);
+
       h1{
         @include flex(1 100%);
       }
