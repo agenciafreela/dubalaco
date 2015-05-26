@@ -86,6 +86,14 @@
       display: none;
     }
 
+    &.produto-sabores, &.produto-embalagens{
+      height: 970px;
+      display: none;
+      &::before{
+        background:url(../images/bg-produto.gif) no-repeat top center white ;
+      }
+    }
+
     &.produto{
       height: 800px;
 
@@ -341,4 +349,41 @@
         padding: 15px 5px
       }
     }
+  }
+
+  #produto-sabores{
+
+    h1,
+    h2{
+      font-family: 'PoetsenOne Regular', helvetica;
+      text-align: center;
+      color: $casablanca;
+    }
+    h1{
+      font-size: 2em;
+      margin: 10px;
+    }
+
+    .main{
+      @include align-items(center);
+      font-family: 'cafeta', helvetica;
+      #persona{
+        @include flex(2 25%);
+      }
+      #speak{
+        @include flex(2 75%);
+        text-align: left;
+        color: white;
+        background-color: $amaranth-red;
+        border-radius: 20px;
+        padding: 25px;
+      }
+    }
+
+    .personas{
+      @include flexbox;
+      @include flex-flow(row nowrap);
+      @include justify-content(flex-start);
+    }
+
   }
