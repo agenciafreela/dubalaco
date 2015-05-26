@@ -78,10 +78,12 @@
     }
     &.dubalaco-valores{
       height: 700px;
+      display: none;
     }
 
     &.dubalaco-organico{
       height: 900px;
+      display: none;
     }
 
     &.produto{
@@ -316,7 +318,6 @@
     color: $victoria !important;
     font-size: 1.1em;
     text-align: left;
-
 
   }
 

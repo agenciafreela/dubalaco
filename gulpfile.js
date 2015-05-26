@@ -19,7 +19,7 @@ gulp.task('watch', function(){
     .pipe(connect.reload());
   });
   gulp.watch(['app/src/scss/**/*.scss'],['sass']);
-  gulp.watch('app/src/scripts/**/*.js',['javascript']);
+  gulp.watch('app/src/scripts/*.js',['javascript']);
 });
 
 // Task para compilar o sass, concatenar os estilos num único arquivo, minificar e criar o sourcemap
