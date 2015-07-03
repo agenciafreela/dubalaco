@@ -229,6 +229,13 @@
       height: 100px;
     }
 
+    img{
+      -webkit-animation:spin 60s linear infinite;
+      -moz-animation:spin 60s linear infinite;
+      animation:spin 60s linear infinite;
+    }
+
+
     div[class*="balloon"]{
       min-width: 222px;
       min-height: 235px;
@@ -387,3 +394,6 @@
     }
 
   }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
