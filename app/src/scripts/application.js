@@ -5,17 +5,23 @@ $(function(){
       e.preventDefault();
       var panel = '.' + $(this).data('panel');
       $(panel).slideToggle('slow');
+      $('html, body').animate({
+          scrollTop: $( "#" + $(this).data('panel')).offset().top
+      }, 1500);
+      return false;
+
     }
   })
   $('li a').bind('click', function(event) {
-      var $anchor = $(this);
-      event.preventDefault();
-
-      console.log( $($($anchor).attr('href')).offset().top);
-/*
-      $('html, body').stop().animate({
-          scrollTop: $($($anchor).attr('href')).offset().top
-      }, 1500, 'easeInOutExpo');
-*/
+    scrollTo($(this).attr('href'));
   });
+
+  var scrollTo = function(elementID){
+
+    $('html, body').animate({
+        scrollTop: $(elementID).offset().top
+    }, 1500);
+    return false;
+  }
+
 });
