@@ -332,10 +332,10 @@
 
   .dubalaco-valores{
     .main{
-      &>aside:first-child{ max-width: 39% !important;  padding: 0 40px;}
+      &>aside:first-child{ max-width: 35% !important;  padding: 0 20px;}
       &>aside:last-child{ padding: 0 40px;}
       &>aside{
-        max-width: 29%;
+        max-width: 30%;
       }
     }
   }
@@ -416,11 +416,11 @@
       }
 
       #persona{
-        @include flex(2 25%);
+        @include flex(2 20%);
         text-align: center;
       }
       #speak{
-        @include flex(2 75%);
+        @include flex(2 70%);
         max-height: 200px;
         text-align: center;
         color: white;
