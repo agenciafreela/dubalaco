@@ -27,8 +27,12 @@ $(function(){
 
   $("form").on({submit: function(e) {
     e.preventDefault();
+    form = $(this);
     $.post( $(this).attr("action"), $(this).serialize(), function(result) {
       "Success" == result.trim() ? alert("Obrigado, entraremos em contato em breve!") : (result = "Error") && alert("Houve uma falha ao enviar seus dados, tente novamente mais tarde!")
+      form.each (function(){
+        this.reset();
+      });
     })
   }})
 

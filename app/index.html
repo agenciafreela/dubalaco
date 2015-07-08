@@ -5,7 +5,7 @@
   <title>.: DuBalaCo :.</title>
 </head>
 <!-- <link rel="stylesheet" href="public/vendor/bootstrap-3.3.4/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="public/css/application.min.css?v=2">
+<link rel="stylesheet" href="public/css/application.min.css?v=3">
 
 <body>
   <div class="wrapper home">
@@ -325,9 +325,9 @@
         </aside>
         <aside>
           <h4>Se você é lojista e quer vender DuBalaCo em sua loja, deixe seus dados e entraremos em contato. </h4>
-          <form action="">
+          <form action="sendmail.php" method="post">
             <label for="nome">Nome:</label>
-            <input type="text" name="name"  placeholder="Digite seu nome" required>
+            <input type="text" name="nome"  placeholder="Digite seu nome" required>
             <br>
 
             <label for="email">Email:</label>
@@ -374,9 +374,9 @@
         </aside>
         <aside>
         <br>
-          <form action="">
+        <form action="sendmail.php" method="post">
             <label for="nome">Nome:</label>
-            <input type="text" name="name"  placeholder="Digite seu nome" required>
+            <input type="text" name="nome"  placeholder="Digite seu nome" required>
             <br>
 
             <label for="email">Email:</label>
@@ -394,7 +394,7 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="public/scripts/application.min.js?v=2"></script>
+  <script src="public/scripts/application.min.js?v=3"></script>
 
 </body>
 </html>
