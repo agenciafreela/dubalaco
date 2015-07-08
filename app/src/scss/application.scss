@@ -357,7 +357,7 @@
     h2{
       font-family: 'PoetsenOne Regular', helvetica;
       text-align: center;
-      color: $casablanca;
+      color: white;
     }
     h1{
       font-size: 2em;
@@ -367,14 +367,51 @@
     .main{
       @include align-items(center);
       font-family: 'cafeta', helvetica;
+
+      &.limao,
+      &.maracuja
+      {
+        #speak{
+          background-color: $casablanca;
+        }
+        #persona > h2{
+          color: $casablanca
+        }
+      }
+      &.tangerina,
+      &.pessego{
+        #speak{
+          background-color: $flamingo;
+        }
+        #persona > h2{
+          color: $flamingo
+        }
+      }
+      &.amora{
+        #speak{
+          background-color: $victoria;
+        }
+        #persona > h2{
+          color: $victoria
+        }
+      }
+      &.morango{
+        #speak{
+          background-color: $cardinal-red;
+        }
+        #persona > h2{
+          color: $cardinal-red
+        }
+      }
+
       #persona{
         @include flex(2 25%);
+        text-align: center;
       }
       #speak{
         @include flex(2 75%);
-        text-align: left;
+        text-align: center;
         color: white;
-        background-color: $amaranth-red;
         border-radius: 20px;
         padding: 25px;
       }
