@@ -48,8 +48,8 @@ $(function(){
           title.html('Se a vida te der um limão, torça para que seja Siciliano.');
           description.html('Ma che! Sou o <stron>Limão Siciliano</stron>.
           Sou originário da Ásia, mas fiz minha fama na Itália, na região
-          da Sicilia, <br> quando os árabes me trouxeram há muuuuuito tempo.
-          Sou bonito, amarelo, cheiroso e cheinho de suco. No Brasil <br>
+          da Sicilia, quando os árabes me trouxeram há muuuuuito tempo.
+          Sou bonito, amarelo, cheiroso e cheinho de suco. No Brasil
           ainda são poucos lugares que me cultivam, então aproveite para sentir
           todo o meu sabor nas balas DuBalaco!');
         break;
